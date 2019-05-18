@@ -1,0 +1,12 @@
+C:\MCT\S4\SmartApp\FlightsReservationApp\FlightsReservationApp\FlightsReservationApp\bin\Debug\netstandard2.0\FlightsReservationApp.deps.json
+C:\MCT\S4\SmartApp\FlightsReservationApp\FlightsReservationApp\FlightsReservationApp\bin\Debug\netstandard2.0\FlightsReservationApp.dll
+C:\MCT\S4\SmartApp\FlightsReservationApp\FlightsReservationApp\FlightsReservationApp\obj\Debug\netstandard2.0\FlightsReservationApp.csprojAssemblyReference.cache
+C:\MCT\S4\SmartApp\FlightsReservationApp\FlightsReservationApp\FlightsReservationApp\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\MCT\S4\SmartApp\FlightsReservationApp\FlightsReservationApp\FlightsReservationApp\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\MCT\S4\SmartApp\FlightsReservationApp\FlightsReservationApp\FlightsReservationApp\obj\Debug\netstandard2.0\FlightsReservationApp.csproj.CoreCompileInputs.cache
+C:\MCT\S4\SmartApp\FlightsReservationApp\FlightsReservationApp\FlightsReservationApp\obj\Debug\netstandard2.0\FlightsReservationApp.AssemblyInfoInputs.cache
+C:\MCT\S4\SmartApp\FlightsReservationApp\FlightsReservationApp\FlightsReservationApp\obj\Debug\netstandard2.0\FlightsReservationApp.AssemblyInfo.cs
+C:\MCT\S4\SmartApp\FlightsReservationApp\FlightsReservationApp\FlightsReservationApp\bin\Debug\netstandard2.0\FlightsReservationApp.pdb
+C:\MCT\S4\SmartApp\FlightsReservationApp\FlightsReservationApp\FlightsReservationApp\obj\Debug\netstandard2.0\FlightsReservationApp.dll
+C:\MCT\S4\SmartApp\FlightsReservationApp\FlightsReservationApp\FlightsReservationApp\obj\Debug\netstandard2.0\FlightsReservationApp.pdb
+C:\MCT\S4\SmartApp\FlightsReservationApp\FlightsReservationApp\FlightsReservationApp\obj\Debug\netstandard2.0\XamlC.stamp

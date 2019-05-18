@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:FlightsReservationApp"
+             x:Class="FlightsReservationApp.MainPage">
+
+    <StackLayout Orientation="Vertical">
+        <Entry Text="{Binding Email}"
+               Placeholder="email"></Entry>
+        <Entry Text="{Binding Password}"
+               Placeholder="password"
+               IsPassword="True"></Entry>
+        <Entry Text="{Binding ConfirmPassword}"
+               Placeholder="confirm password"
+               IsPassword="True"></Entry>
+        <Button Command="{Binding RegisterCommand}"
+                Text="Register"/>
+        <Label Text="{Binding Test}"/>
+    </StackLayout>
+
+
+</ContentPage>
