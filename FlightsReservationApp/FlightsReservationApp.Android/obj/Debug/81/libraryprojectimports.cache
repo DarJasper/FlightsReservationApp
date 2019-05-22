@@ -33,11 +33,13 @@
     <ResolvedResourceDirectory>C:\MCT\S4\SmartApp\FlightsReservationApp\FlightsReservationApp\FlightsReservationApp.Android\obj\Debug\81\lp\25\jl\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>C:\MCT\S4\SmartApp\FlightsReservationApp\FlightsReservationApp\FlightsReservationApp.Android\obj\Debug\81\lp\26\jl\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>C:\MCT\S4\SmartApp\FlightsReservationApp\FlightsReservationApp\FlightsReservationApp.Android\obj\Debug\81\lp\28\jl\res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>C:\MCT\S4\SmartApp\FlightsReservationApp\FlightsReservationApp\FlightsReservationApp.Android\obj\Debug\81\lp\31\jl\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\MCT\S4\SmartApp\FlightsReservationApp\FlightsReservationApp\FlightsReservationApp.Android\obj\Debug\81\lp\30\jl\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\MCT\S4\SmartApp\FlightsReservationApp\FlightsReservationApp\FlightsReservationApp.Android\obj\Debug\81\lp\32\jl\res</ResolvedResourceDirectory>
   </ResolvedResourceDirectories>
   <ResolvedAssetDirectories>
     <ResolvedAssetDirectory>obj\Debug\81\lp\23\jl\assets</ResolvedAssetDirectory>
-    <ResolvedAssetDirectory>obj\Debug\81\lp\31\jl\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj\Debug\81\lp\30\jl\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj\Debug\81\lp\32\jl\assets</ResolvedAssetDirectory>
   </ResolvedAssetDirectories>
   <ResolvedEnvironmentFiles />
   <ResolvedResourceDirectoryStamps>
@@ -50,6 +52,7 @@
     <ResolvedResourceDirectoryStamp>C:\MCT\S4\SmartApp\FlightsReservationApp\FlightsReservationApp\FlightsReservationApp.Android\obj\Debug\81\lp\25.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>C:\MCT\S4\SmartApp\FlightsReservationApp\FlightsReservationApp\FlightsReservationApp.Android\obj\Debug\81\lp\26.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>C:\MCT\S4\SmartApp\FlightsReservationApp\FlightsReservationApp\FlightsReservationApp.Android\obj\Debug\81\lp\28.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>C:\MCT\S4\SmartApp\FlightsReservationApp\FlightsReservationApp\FlightsReservationApp.Android\obj\Debug\81\lp\31.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\MCT\S4\SmartApp\FlightsReservationApp\FlightsReservationApp\FlightsReservationApp.Android\obj\Debug\81\lp\30.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\MCT\S4\SmartApp\FlightsReservationApp\FlightsReservationApp\FlightsReservationApp.Android\obj\Debug\81\lp\32.stamp</ResolvedResourceDirectoryStamp>
   </ResolvedResourceDirectoryStamps>
 </Paths>

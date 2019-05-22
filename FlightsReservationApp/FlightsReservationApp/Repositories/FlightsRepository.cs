@@ -3,6 +3,7 @@ using Flurl.Http;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -10,27 +11,15 @@ namespace FlightsReservationApp.Repositories
 {
     public class FlightsRepository : IFlightsRepository
     {
-        public string url = "https://localhost:44387/api";
+        List<Flights> ListOfFlights = new List<Flights>();
+        string url = "https://apismartappbackend.azurewebsites.net/api/Flights";
 
-        public async Task<List<Flights>> GetAllFlightsAsync()
+        public async Task<List<Flights>> GetFlights()
         {
-            try
-            {
-                string endpoint = url + "Flights";
-                
-                var result = await endpoint.GetJsonAsync<List<Flights>>();
+            if (!ListOfFlights.Any())
+                ListOfFlights = await url.GetJsonAsync<List<Flights>>();
 
-                Debug.Write(result[0].DepartureAirport.City);
-                return result;
-            }
-            catch (FlurlHttpException ex)
-            {
-                throw ex;
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
+            return ListOfFlights;
         }
     }
 }

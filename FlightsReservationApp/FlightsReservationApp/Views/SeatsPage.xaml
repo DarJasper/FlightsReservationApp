@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FlightsReservationApp.Views.SeatsPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Name="Logout" Command="{Binding LogoutCommand}"></ToolbarItem>
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="FillAndExpand"
+                     Margin="10, 30, 10, 20"
+                     HorizontalOptions="Center"
+                     BackgroundColor="Transparent">
+            <Label Text="{Binding Title}"
+                   HorizontalOptions="Center"
+                   FontSize="Large"
+                   TextColor="#472F92"/>
+            <ScrollView x:Name="MyScrollView" 
+                        VerticalOptions="FillAndExpand"
+                        HorizontalOptions="Center"
+                        BackgroundColor="Transparent"
+                        Margin="0, 20, 0, 0"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

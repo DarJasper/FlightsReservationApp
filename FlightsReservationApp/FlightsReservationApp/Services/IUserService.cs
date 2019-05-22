@@ -5,6 +5,7 @@ namespace FlightsReservationApp.Services
 {
     public interface IUserService
     {
-        Task RegisterAsync(User _user);
+        Task<bool> RegisterAsync(User _user);
+        Task<bool> Login(User user);
     }
 }

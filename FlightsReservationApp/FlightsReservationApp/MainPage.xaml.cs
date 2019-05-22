@@ -13,7 +13,7 @@ namespace FlightsReservationApp
         {
             InitializeComponent();
 
-            BindingContext = App.ViewModelLocator.RegisterViewModel;
+            BindingContext = App.ViewModelLocator.FlightsOverviewViewModel;
         }
     }
 }

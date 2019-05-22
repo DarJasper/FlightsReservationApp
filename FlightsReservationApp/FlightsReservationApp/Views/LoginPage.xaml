@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FlightsReservationApp.Views.LoginPage"
+             NavigationPage.HasBackButton="False"
+             Title="MCT Airlines">
+            
+    <StackLayout>
+        <!--<Frame Padding="0, 10"
+               BackgroundColor="#472F92">
+            <Label Text="MCT Airlines"
+               FontSize="Large"
+                   TextColor="White"
+               HorizontalTextAlignment="Center"/>
+        </Frame>-->
+
+        <StackLayout Orientation="Vertical"  Padding="20">
+
+            <Label Text="Sign In"
+                       TextColor="#472F92"
+                       FontSize="Large"
+                       Margin="0,20,0,30">
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="Android" Value="Montserrat-Regular.ttf#Montserrat-Regular" />
+                    </OnPlatform>
+                </Label.FontFamily>
+            </Label>
+            
+
+            <Label Text="Email"/>
+            <Frame Padding = "0,0,0,0">
+                <Entry Text="{Binding Email}"
+                       Keyboard="Email"/>
+            </Frame>
+            <Label Text="{ Binding EmailError }"
+                       TextColor="DarkRed"/>
+
+            <Label Text="Password"/>
+            <Frame Padding = "0,0,0,0">
+                <Entry Text="{Binding Password}"
+                       IsPassword="True"
+                       IsEnabled="false"/>
+            </Frame>
+            <Label></Label>
+
+            <Button Command="{Binding LoginCommand}"
+                        WidthRequest="250"
+                        TextColor="White"
+                        FontSize="Medium"
+                        HorizontalOptions="Center"
+                        BackgroundColor="#472F92"
+                        CornerRadius="5"
+                        Text="Sign in"/>
+
+            <Button Command="{Binding GoToRegistrationCommand}"
+                    Text="Don't have an account yet? Sign up."
+                    TextColor="#472F92"
+                    BorderColor="Transparent"
+                    BackgroundColor="Transparent"/>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

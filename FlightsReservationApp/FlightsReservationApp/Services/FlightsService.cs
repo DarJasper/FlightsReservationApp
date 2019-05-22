@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace FlightsReservationApp.Services
 {
-    public class FlightsService
+    public class FlightsService : IFlightsService
     {
         private readonly IFlightsRepository _repo;
 
@@ -16,9 +16,19 @@ namespace FlightsReservationApp.Services
             this._repo = repo;
         }
 
-        public Task<List<Flights>> GetAllFlights()
+        public async Task<List<Flights>> GetFlightsTo(Airports airport)
         {
-            return _repo.GetAllFlightsAsync();
+            var allFlights = await _repo.GetFlights();
+            List<Flights> flightsTo = new List<Flights>();
+            foreach(var f in allFlights)
+            {
+                if (f.ArrivalAirport.Name == airport.Name)
+                    flightsTo.Add(f);
+
+                Console.WriteLine(f.FlightNumber);
+            }
+            return flightsTo;
         }
+        
     }
 }

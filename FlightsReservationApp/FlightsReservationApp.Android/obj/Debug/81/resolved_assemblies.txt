@@ -14,6 +14,8 @@ C:\MCT\S4\SmartApp\FlightsReservationApp\FlightsReservationApp\FlightsReservatio
 C:\MCT\S4\SmartApp\FlightsReservationApp\FlightsReservationApp\FlightsReservationApp.Android\obj\Debug\81\android\assets\System.Net.Http.dll
 C:\MCT\S4\SmartApp\FlightsReservationApp\FlightsReservationApp\FlightsReservationApp.Android\obj\Debug\81\android\assets\System.Net.Http.Extensions.dll
 C:\MCT\S4\SmartApp\FlightsReservationApp\FlightsReservationApp\FlightsReservationApp.Android\obj\Debug\81\android\assets\System.Net.Http.Primitives.dll
+C:\MCT\S4\SmartApp\FlightsReservationApp\FlightsReservationApp\FlightsReservationApp.Android\obj\Debug\81\android\assets\System.Numerics.dll
+C:\MCT\S4\SmartApp\FlightsReservationApp\FlightsReservationApp\FlightsReservationApp.Android\obj\Debug\81\android\assets\System.Numerics.Vectors.dll
 C:\MCT\S4\SmartApp\FlightsReservationApp\FlightsReservationApp\FlightsReservationApp.Android\obj\Debug\81\android\assets\System.Xml.dll
 C:\MCT\S4\SmartApp\FlightsReservationApp\FlightsReservationApp\FlightsReservationApp.Android\obj\Debug\81\android\assets\System.Xml.Linq.dll
 C:\MCT\S4\SmartApp\FlightsReservationApp\FlightsReservationApp\FlightsReservationApp.Android\obj\Debug\81\android\assets\Xamarin.Android.Arch.Core.Common.dll
@@ -36,13 +38,13 @@ C:\MCT\S4\SmartApp\FlightsReservationApp\FlightsReservationApp\FlightsReservatio
 C:\MCT\S4\SmartApp\FlightsReservationApp\FlightsReservationApp\FlightsReservationApp.Android\obj\Debug\81\android\assets\Xamarin.Android.Support.v7.Palette.dll
 C:\MCT\S4\SmartApp\FlightsReservationApp\FlightsReservationApp\FlightsReservationApp.Android\obj\Debug\81\android\assets\Xamarin.Android.Support.v7.RecyclerView.dll
 C:\MCT\S4\SmartApp\FlightsReservationApp\FlightsReservationApp\FlightsReservationApp.Android\obj\Debug\81\android\assets\Xamarin.Android.Support.Vector.Drawable.dll
+C:\MCT\S4\SmartApp\FlightsReservationApp\FlightsReservationApp\FlightsReservationApp.Android\obj\Debug\81\android\assets\Xamarin.Essentials.dll
 C:\MCT\S4\SmartApp\FlightsReservationApp\FlightsReservationApp\FlightsReservationApp.Android\obj\Debug\81\android\assets\Xamarin.Forms.Core.dll
 C:\MCT\S4\SmartApp\FlightsReservationApp\FlightsReservationApp\FlightsReservationApp.Android\obj\Debug\81\android\assets\Xamarin.Forms.Platform.Android.dll
 C:\MCT\S4\SmartApp\FlightsReservationApp\FlightsReservationApp\FlightsReservationApp.Android\obj\Debug\81\android\assets\Xamarin.Forms.Platform.dll
 C:\MCT\S4\SmartApp\FlightsReservationApp\FlightsReservationApp\FlightsReservationApp.Android\obj\Debug\81\android\assets\Xamarin.Forms.Xaml.dll
 C:\MCT\S4\SmartApp\FlightsReservationApp\FlightsReservationApp\FlightsReservationApp.Android\obj\Debug\81\android\assets\netstandard.dll
 C:\MCT\S4\SmartApp\FlightsReservationApp\FlightsReservationApp\FlightsReservationApp.Android\obj\Debug\81\android\assets\System.Data.dll
-C:\MCT\S4\SmartApp\FlightsReservationApp\FlightsReservationApp\FlightsReservationApp.Android\obj\Debug\81\android\assets\System.Numerics.dll
 C:\MCT\S4\SmartApp\FlightsReservationApp\FlightsReservationApp\FlightsReservationApp.Android\obj\Debug\81\android\assets\System.Transactions.dll
 C:\MCT\S4\SmartApp\FlightsReservationApp\FlightsReservationApp\FlightsReservationApp.Android\obj\Debug\81\android\assets\System.IO.Compression.dll
 C:\MCT\S4\SmartApp\FlightsReservationApp\FlightsReservationApp\FlightsReservationApp.Android\obj\Debug\81\android\assets\System.IO.Compression.FileSystem.dll

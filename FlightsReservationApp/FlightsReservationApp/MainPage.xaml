@@ -4,18 +4,21 @@
              xmlns:local="clr-namespace:FlightsReservationApp"
              x:Class="FlightsReservationApp.MainPage">
 
-    <StackLayout Orientation="Vertical">
-        <Entry Text="{Binding Email}"
-               Placeholder="email"></Entry>
-        <Entry Text="{Binding Password}"
-               Placeholder="password"
-               IsPassword="True"></Entry>
-        <Entry Text="{Binding ConfirmPassword}"
-               Placeholder="confirm password"
-               IsPassword="True"></Entry>
-        <Button Command="{Binding RegisterCommand}"
-                Text="Register"/>
-        <Label Text="{Binding Test}"/>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Name="Logout" Command="{Binding LogoutCommand}"></ToolbarItem>
+    </ContentPage.ToolbarItems>
+
+    <StackLayout Orientation="Vertical"  Padding="20">
+        <Frame Padding = "0,0,0,0">
+            <Picker ItemsSource="{Binding Airports}"
+                    SelectedItem="{Binding SelectedAirport}"
+                    Title="Where to?"/>
+        </Frame>
+        <Label Text="From: Brussels(BRU)"
+               FontSize="Micro"
+               Margin="2,0,0,0"/>
+
+
     </StackLayout>
 
 

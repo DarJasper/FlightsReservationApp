@@ -15,11 +15,15 @@ namespace FlightsReservationApp.Services
             this._repo = userRepository;
         }
 
-        public async Task RegisterAsync(User user)
+        public async Task<bool> RegisterAsync(User user)
         {
-            Console.WriteLine("Inside Service");
-            await _repo.RegisterAsync(user);
+            return await _repo.RegisterAsync(user);
             
+        }
+
+        public async Task<bool> Login(User user)
+        {
+            return await _repo.LoginAsync(user);
         }
     }
 }

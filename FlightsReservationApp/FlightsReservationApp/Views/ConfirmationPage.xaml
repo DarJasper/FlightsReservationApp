@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FlightsReservationApp.Views.ConfirmationPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Name="Logout" Command="{Binding LogoutCommand}"></ToolbarItem>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Confirm order"
+                   HorizontalTextAlignment="Center"
+                   HorizontalOptions="CenterAndExpand"
+                   FontSize="36"
+                   TextColor="#472F92"
+                   Margin="0,20,0,0"/>
+            <Grid Margin="20,10,20,20"
+              Padding="0"
+              RowSpacing="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Label Text="{ Binding DepAirport }" FontSize="54" TextColor="Black"
+                   Grid.Column="0" Grid.Row="0"/>
+                <Label Text="{ Binding DepCity }" FontSize="Small" Margin="5,0,0,0"
+                   VerticalTextAlignment="Start"
+                   Grid.Column="0" Grid.Row="1"/>
+
+                <Label Text="{ Binding ArrAirport }" FontSize="54" TextColor="Black"
+                   HorizontalTextAlignment="End"
+                   Grid.Column="0" Grid.Row="0"/>
+                <Label Text="{ Binding ArrCity }" FontSize="Small" Margin="0,0,5,0"
+                   HorizontalTextAlignment="End"
+                   VerticalTextAlignment="Start"
+                   Grid.Column="0" Grid.Row="1"/>
+            </Grid>
+
+            <BoxView HorizontalOptions="FillAndExpand" HeightRequest="2" Color="#472F92" Margin="10,0,10,10"/>
+            <Grid Margin="0" Padding="0" VerticalOptions="FillAndExpand">
+                <Image Source="{ Binding Image }"
+                   Aspect="AspectFill"
+                   Grid.Column="0"
+                   Grid.Row="0"
+                   VerticalOptions="FillAndExpand"/>
+                <StackLayout BackgroundColor="Transparent"
+                         VerticalOptions="FillAndExpand"
+                         Padding="20"
+                         Grid.Column="0"
+                         Grid.Row="0">
+                    <Frame Margin="10,0">
+                        <Label Text="{ Binding FlightDate }"
+                       FontSize="Large"
+                       HorizontalTextAlignment="Center"
+                       VerticalTextAlignment="Center"/>
+                    </Frame>
+                    <Grid>
+                        <Frame Margin="10,0,2,0"
+                       Grid.Row="0"
+                       Grid.Column="0">
+                            <Grid>
+                                <Label Text="DEPARTURE" FontSize="Micro"
+                               Grid.Row="0"
+                               Grid.Column="0"
+                               HorizontalTextAlignment="Center"/>
+                                <Label Text="{Binding DepTime}" FontSize="Medium"
+                               Grid.Row="1"
+                               Grid.Column="0"
+                               HorizontalTextAlignment="Center"/>
+                            </Grid>
+                        </Frame>
+                        <Frame Margin="2,0,10,0"
+                       Grid.Row="0"
+                       Grid.Column="1">
+                            <Grid>
+                                <Label Text="ARRIVAL" FontSize="Micro"
+                               Grid.Row="0"
+                               Grid.Column="0"
+                               HorizontalTextAlignment="Center"/>
+                                <Label Text="{Binding ArrTime}" FontSize="Medium"
+                               Grid.Row="1"
+                               Grid.Column="0"
+                               HorizontalTextAlignment="Center"/>
+                            </Grid>
+                        </Frame>
+                    </Grid>
+                    <Frame Margin="100,0">
+                        <Label Text="{ Binding Seat }"
+                       FontSize="Medium"
+                       HorizontalTextAlignment="Center"
+                       VerticalTextAlignment="Center"/>
+                    </Frame>
+                    <!-- bottom controls -->
+                    <Button Command="{Binding ConfirmOrder}"
+                    WidthRequest="250"
+                    TextColor="White"
+                    FontSize="Medium"
+                    HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="EndAndExpand"
+                    BackgroundColor="#472F92"
+                    CornerRadius="25"
+                    Text="Confirm"/>
+                    <Button Command="{Binding CancelOrder}"
+                    Text="cancel"
+                    TextColor="White"
+                    BorderColor="Transparent"
+                    BackgroundColor="Transparent"
+                    HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="EndAndExpand"/>
+                </StackLayout>
+            </Grid>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

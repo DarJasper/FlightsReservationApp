@@ -5,6 +5,11 @@ namespace FlightsReservationApp.Repositories
 {
     public interface IUserRepository
     {
-        Task RegisterAsync(User user);
+        Task<bool> RegisterAsync(User user);
+
+
+        Task<bool> LoginAsync(User user);
+
+        Task<Order> GetOrderForm(string email);
     }
 }

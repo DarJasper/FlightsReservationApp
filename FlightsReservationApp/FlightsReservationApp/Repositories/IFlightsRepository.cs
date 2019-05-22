@@ -6,6 +6,6 @@ namespace FlightsReservationApp.Repositories
 {
     public interface IFlightsRepository
     {
-        Task<List<Flights>> GetAllFlightsAsync();
+        Task<List<Flights>> GetFlights();
     }
 }

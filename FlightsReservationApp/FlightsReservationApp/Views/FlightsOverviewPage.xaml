@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FlightsReservationApp.Views.FlightsOverviewPage"
+             NavigationPage.HasBackButton="False"
+             BackgroundImage="vacation.jpg">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Name="Logout" Command="{Binding LogoutCommand}"></ToolbarItem>
+    </ContentPage.ToolbarItems>
+
+    <StackLayout Orientation="Vertical"  Padding="20">
+        <Frame Padding = "0,0,0,0">
+            <Picker ItemsSource="{Binding Airports}"
+                    SelectedItem="{Binding SelectedAirport}"
+                    Title="Where to?"/>
+        </Frame>
+        <Label Text="From: Brussels(BRU)"
+               FontSize="Micro"
+               Margin="2,0,0,0"/>
+
+        <StackLayout Padding="15">
+            <ListView x:Name="lv_flights" ItemsSource="{ Binding Flights}"
+                  SelectedItem="{Binding SelectedFlight, Mode=TwoWay}"
+                  HasUnevenRows="True"
+                  VerticalOptions="FillAndExpand">
+                <ListView.ItemTemplate >
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame Margin="5,5">
+                                <StackLayout Margin="0"
+                                         Padding="0">
+                                    <Grid Margin="0"
+                                      Padding="0"
+                                      RowSpacing="0">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                        </Grid.RowDefinitions>
+                                        <Label Grid.Row="0" Grid.Column="0" Text="{Binding FlightNumber}"
+                                           VerticalOptions="CenterAndExpand"
+                                           Margin="0"/>
+                                        <Label Grid.Row="1" Grid.Column="0" Text="{Binding ArrivalAirport.Name}"
+                                           FontSize="36" 
+                                           VerticalOptions="Center" 
+                                           Margin="0"
+                                           TextColor="#472F92"/>
+                                        <Label Grid.Row="2" Grid.Column="0" Text="{Binding Route}" 
+                                           VerticalOptions="CenterAndExpand"
+                                           TextColor="#472F92"/>
+                                        <Label Grid.Row="0" Grid.Column="1" Text="{Binding Date}"
+                                           HorizontalTextAlignment="End"/>
+                                        <Label Grid.Row="1" Grid.Column="1" Text="{Binding Time}"   
+                                           FontSize="Large"
+                                           HorizontalTextAlignment="End"
+                                           VerticalTextAlignment="End"/>
+                                        <Label Grid.Row="2" Grid.Column="1" Text="{Binding AMPM}" 
+                                           FontSize="Small" 
+                                           VerticalOptions="CenterAndExpand"
+                                           HorizontalTextAlignment="End"/>
+                                    </Grid>
+                                </StackLayout>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

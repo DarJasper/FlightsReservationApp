@@ -3,6 +3,33 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FlightsReservationApp.App">
     <Application.Resources>
-
+        <Style TargetType="Label">
+            <Setter Property="FontFamily">
+                <Setter.Value>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="Android" Value="Montserrat-Regular.ttf#Montserrat-Regular" />
+                    </OnPlatform>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style TargetType="Picker">
+            <Setter Property="FontFamily">
+                <Setter.Value>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="Android" Value="Montserrat-Regular.ttf#Montserrat-Regular" />
+                    </OnPlatform>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style TargetType="Entry">
+            <Setter Property="FontFamily">
+                <Setter.Value>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="Android" Value="Montserrat-Regular.ttf#Montserrat-Regular" />
+                    </OnPlatform>
+                </Setter.Value>
+            </Setter>
+        </Style>
     </Application.Resources>
 </Application>
+
