@@ -5,7 +5,9 @@ VisualStudioVersion = 15.0.28307.645
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightsReservationApp.Android", "FlightsReservationApp\FlightsReservationApp.Android\FlightsReservationApp.Android.csproj", "{614CCECE-4532-443A-BFA8-8BD3DC0F2604}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightsReservationApp", "FlightsReservationApp\FlightsReservationApp\FlightsReservationApp.csproj", "{22DF8AFE-D11F-4689-A7AC-F9A79854385F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlightsReservationApp", "FlightsReservationApp\FlightsReservationApp\FlightsReservationApp.csproj", "{22DF8AFE-D11F-4689-A7AC-F9A79854385F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightsReservation.Tests", "FlightsReservation.Tests\FlightsReservation.Tests.csproj", "{1948AB8E-203A-42E8-822B-BC9FD2401272}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,6 +27,10 @@ Global
 		{22DF8AFE-D11F-4689-A7AC-F9A79854385F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{22DF8AFE-D11F-4689-A7AC-F9A79854385F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{22DF8AFE-D11F-4689-A7AC-F9A79854385F}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{1948AB8E-203A-42E8-822B-BC9FD2401272}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1948AB8E-203A-42E8-822B-BC9FD2401272}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1948AB8E-203A-42E8-822B-BC9FD2401272}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1948AB8E-203A-42E8-822B-BC9FD2401272}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

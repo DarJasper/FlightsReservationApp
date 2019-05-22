@@ -77,8 +77,35 @@ namespace FlightsReservationApp.Repositories
 
         public async Task<Order> GetOrderForm(string email)
         {
-            string url = "https://apismartappbackend.azurewebsites.net/api/Users/FetchForm" + email;
-            return await url.GetJsonAsync<Order>();
+            string url = "https://apismartappbackend.azurewebsites.net/api/Users/GetGuid";
+            try
+            {
+                var user = new User
+                {
+                    Email = email
+                };
+                string result = await url.PostJsonAsync(user).ReceiveString();
+                Console.WriteLine(result);
+
+                return new Order
+                {
+                    UserId = new Guid(result.Trim('"'))
+                };
+            }
+
+            catch (FlurlHttpTimeoutException)
+            {
+                // FlurlHttpTimeoutException derives from FlurlHttpException; catch here only
+                // if you want to handle timeouts as a special case
+                return new Order();
+            }
+            catch (FlurlHttpException ex)
+            {
+                Console.WriteLine(ex);
+                // ex.Message contains rich details, inclulding the URL, verb, response status,
+                // and request and response bodies (if available)
+                return new Order();
+            }
         }
     }
 }

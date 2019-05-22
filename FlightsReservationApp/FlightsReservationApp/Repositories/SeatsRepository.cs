@@ -1,5 +1,6 @@
 ﻿using FlightsReservationApp.Models;
 using Flurl.Http;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Net;
@@ -20,8 +21,7 @@ namespace FlightsReservationApp.Repositories
         {
             try
             {
-                var url = "https://apismartappbackend.azurewebsites.net/api/Seats/Reserve";
-
+                var url = "https://apismartappbackend.azurewebsites.net/api/Seats/Reserve/";
                 var result = await url.PostJsonAsync(order);
                 if (result.StatusCode == HttpStatusCode.OK)
                 {

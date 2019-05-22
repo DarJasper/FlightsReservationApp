@@ -30,7 +30,7 @@ namespace FlightsReservationApp.Services
             return Task.Run(() => _userRepo.GetOrderForm(email)).Result;
         }
 
-        public async Task<bool> ReserveSelectedSeat()
+        public bool ReserveSelectedSeat()
         {
             //GET USERID
             string loggedInUser = Application.Current.Properties["loggedinUser"].ToString();
@@ -53,16 +53,22 @@ namespace FlightsReservationApp.Services
                 }
             }
             //ADD SEAT TO ORDER FORM
+            var x = new Tickets
+            {
+                FlightId = flights.Id,
+                SeatId = selectedSeatObj.Id,
+            };
             OrderForm.Tickets = new List<Tickets>
             {
-                [0] = new Tickets
-                {
-                    FlightId = flights.Id,
-                    SeatId = selectedSeatObj.Id,
-                }
+                x
             };
 
-            return await _repo.OrderSeat(OrderForm);
+            return OrderSeat(OrderForm);
+        }
+
+        public bool OrderSeat(Order form)
+        {
+            return Task.Run(() => _repo.OrderSeat(form)).Result;
         }
     }
 }

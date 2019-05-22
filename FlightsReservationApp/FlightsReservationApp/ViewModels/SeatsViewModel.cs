@@ -21,7 +21,10 @@ namespace FlightsReservationApp.ViewModels
         {
             _seatsService = seatsService;
             _navigationService = navigationService;
+            
         }
+
+
 
         public string Title
         {
@@ -32,8 +35,25 @@ namespace FlightsReservationApp.ViewModels
             }
         }
 
-
         //Button Relays
+        public RelayCommand LogoutCommand
+        {
+            get
+            {
+                return new RelayCommand(LogoutUser);
+            }
+        }
+
+
+
+        public RelayCommand<string> SaveReservationCommand
+        {
+            get
+            {
+                return new RelayCommand<string>((s) => SelectedSeat(s));
+            }
+        }
+
         private void LogoutUser()
         {
             if (Application.Current.Properties.ContainsKey("loggedinUser"))
@@ -49,14 +69,6 @@ namespace FlightsReservationApp.ViewModels
                 Application.Current.Properties.Remove("selectedSeat");
             }
             _navigationService.NavigateTo("LoginPage");
-        }
-
-        public RelayCommand<string> SaveReservationCommand
-        {
-            get
-            {
-                return new RelayCommand<string>((s) => SelectedSeat(s));
-            }
         }
 
         private void SelectedSeat(string seat)

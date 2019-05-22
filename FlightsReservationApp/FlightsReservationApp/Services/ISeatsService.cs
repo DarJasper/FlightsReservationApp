@@ -6,6 +6,6 @@ namespace FlightsReservationApp.Services
     public interface ISeatsService
     {
         Flights GetSeats(Flights flight);
-        Task<bool> ReserveSelectedSeat();
+        bool ReserveSelectedSeat();
     }
 }

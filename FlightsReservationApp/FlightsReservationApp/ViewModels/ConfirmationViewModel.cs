@@ -172,7 +172,7 @@ namespace FlightsReservationApp.ViewModels
         {
             get
             {
-                return new RelayCommand(Cancellation);
+                return new RelayCommand(GoBackToOverview);
             }
         }
 
@@ -196,21 +196,20 @@ namespace FlightsReservationApp.ViewModels
 
         private void Confirmation()
         {
-            Console.WriteLine(_seatsService.ReserveSelectedSeat());
+            if (_seatsService.ReserveSelectedSeat() == true)
+            {
+                Application.Current.MainPage.DisplayAlert("Flight Confirmation", "Congratsulations! Your flight booking is confirmed.", "Ok");
+                return;
+            } else
+            {
+                Application.Current.MainPage.DisplayAlert("Booking cancelled", "Something went wrong, try again later.", "Ok");
+                return;
+            }
         }
 
-        private void Cancellation()
+        private void GoBackToOverview()
         {
-
-            if (Application.Current.Properties.ContainsKey("selectedFlight"))
-            {
-                Application.Current.Properties.Remove("selectedFlight");
-            }
-            if (Application.Current.Properties.ContainsKey("selectedSeat"))
-            {
-                Application.Current.Properties.Remove("selectedSeat");
-            }
-            _navigationService.NavigateTo("FlightsOverviewPage");
+            _navigationService.NavigateTo(ViewModelLocator.FlightsOverviewPage);
         }
 
         //Other Functions

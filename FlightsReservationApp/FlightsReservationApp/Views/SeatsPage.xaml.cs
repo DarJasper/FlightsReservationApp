@@ -26,11 +26,11 @@ namespace FlightsReservationApp.Views
         public SeatsPage()
         {
             InitializeComponent();
-            grid.Children.Clear();
             MessagingCenter.Subscribe<object>(this, "CreateGrid", (sender) => {
-                Console.WriteLine("Received message");
                 CreateGrid();
             });
+
+            //MessagingCenter.Send<object>(this, "InitGrid");
             BindingContext = App.ViewModelLocator.SeatsViewModel;
             //Messenger.Default.Send<NotificationMessage>(new NotificationMessage("PageLoaded"));
 
@@ -112,6 +112,5 @@ namespace FlightsReservationApp.Views
             grid.Padding = 0;
             MyScrollView.Content = grid;
         }
-        
     }
 }

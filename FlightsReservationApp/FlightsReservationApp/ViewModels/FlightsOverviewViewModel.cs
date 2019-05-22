@@ -72,6 +72,7 @@ namespace FlightsReservationApp.ViewModels
             get
             {
                 return _selectedFlights;
+                
             }
             set
             {
